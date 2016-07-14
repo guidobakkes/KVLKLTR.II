@@ -1,18 +1,26 @@
 * {
-    color: orange;
+    color: white;
+    font-family: "Helvetica", sans-serif;
+    font-size: 20px;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #F1F2B5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F1F2B5 , #135058); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F1F2B5 , #135058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .calculator {
-    width: 200px;
+    width: 100%;
     margin: 0 auto;
-    background-color: rgba(50, 50, 50, 0.1);;
 }
 
 #screen {
-    border: 1px solid #d8d8d8;
-    height: 20px;
-    border-top: 1px solid #808080;
-    margin-bottom: 5px;
+    border-bottom: 1px solid #135058;
+    height: 100px;
+    margin: 50px 0 5px 0;
 }
 
 button {
@@ -21,11 +29,15 @@ button {
 }
 
 button:hover {
-    border: 2px solid orange;
+    border: 2px solid #21717c;
 }
 
 .buttons > button {
     width: 23%;
-    height: 40px;
-    background-color: black;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.buttons > button:last-child {
+    width: 46%;
 }
